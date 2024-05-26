@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favcion.png" type="image/x-icon" />
+  <title>Azure Open AI Testing</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="mt-5">
+  <h1 class="animate__animated animate__heartBeat" style="font-family: 'Kaushan Script', cursive">
+    <center>Azure GPT Testing</center>
+  </h1>
+  <div class="main_box">
+    <div class="argc_box animate__animated animate__backInLeft">
+      <h5>Azure_endpoint</h5>
+      <input type="text" id="azure_endpoint" placeholder="azure_endpoint" />
+      <h5>API_version</h5>
+      <input type="text" id="api_version" placeholder="api_version" rows="2" />
+      <h5>Model_name</h5>
+      <input type="text" id="model_name" placeholder="model_name" rows="2" />
+      <h5>API_key</h5>
+      <input type="text" id="api_key" placeholder="api_key" rows="2" />
+      <h5>Temperature</h5>
+      <input type="text" id="temperature" placeholder="temperature" rows="2" />
+      <h5>Max_tokens</h5>
+      <input type="text" id="max_tokens" placeholder="max_tokens" rows="2" />
+      <h5>Streaming</h5>
+      <input class="form-control mt-2" id="streaming" type="checkbox" class="w-25" />
+      <h5>Image</h5>
+      <input type="file" id="user_image" accept="image/*" />
+      <img id="imagePreview" style="width: 100%" />
+    </div>
+
+    <div class="containerbox">
+      <div class="inputOutput">
+        <textarea class="animate__animated animate__zoomInDown" id="user_prompt" placeholder="Prompting Here" rows="10"
+          autofocus>Azure Open AI是甚麼?</textarea>
+        <textarea class="animate__animated animate__zoomInUp" id="gpt_response" rows="8" readonly></textarea>
+        <div style="display: flex; gap: 10%">
+          <div>Processing Time：<span id="processingTime"></span></div>
+          <div>First Response Time：<span id="firstResponseTime"></span></div>
+        </div>
+        <button class="btn bg-white animate__animated animate__wobble w-100" id="submitButton">
+          Submit
+        </button>
+        <div id="loading" style="display: none"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

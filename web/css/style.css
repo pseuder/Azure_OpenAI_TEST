@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#loading {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.main_box {
+  display: flex;
+  margin: auto auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+}
+
+.argc_box {
+  width: 27%;
+  margin: 10px;
+}
+
+.containerbox {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.inputOutput {
+  width: 90%;
+}
+
+.modal {
+  color: #000;
+}
+
+.modal-header {
+  background-color: #383838;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.close {
+  color: #fff;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.modal-content {
+  margin: auto;
+}
+
+.btn {
+  margin-top: 8px;
+}
+
+.btn:hover {
+  filter: brightness(85%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: black;
+}
+
+h1 {
+  color: #fff;
+}
